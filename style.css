@@ -244,7 +244,7 @@ transition: background-color .5s;
 		top: 43px;
 		left: 13px;
 	}
-	label input[type=checkbox]  ~ .menu__popup{
+	#popup ~ * .menu__popup{
 		visibility: hidden;
 		position: absolute;
 		width: 100%;
@@ -262,13 +262,13 @@ transition: background-color .5s;
 	.popup__menu__item{
 		font: 500 30px/60px Roboto, arial, helvetica, sans-serif;
 	}
-	label input[type=checkbox]:checked ~ .menu__popup{
+	#popup:checked ~ * .menu__popup{
 		visibility: visible;
 	}
-label input[type=checkbox]:checked ~ .menu_burger{
+#popup:checked ~ * .menu_burger{
 	visibility: hidden;
 }
-label input[type=checkbox]:checked ~ .menu_cross{
+#popup:checked ~ * .menu_cross{
 	visibility: visible;
 		position: absolute;
 		left: 92%;
@@ -279,7 +279,7 @@ label input[type=checkbox]:checked ~ .menu_cross{
 		background: url(img/cross.svg) no-repeat;
 		cursor: pointer;
 }
-label input[type=checkbox]:checked ~ .main{
+#popup:checked ~ * .main{
 	display: none;
 }
 	.main{
